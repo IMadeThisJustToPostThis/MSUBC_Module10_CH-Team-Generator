@@ -1,0 +1,17 @@
+{
+    "name": "MATZ TEAM GENERATOR",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "Mateusz Zielinski",
+    "license": "ISC",
+    "dependencies": {
+        "inquirer": "^8.2.4",
+        "jest": "^29.0.3",
+        "lib": "^4.3.3"
+    }
+}
