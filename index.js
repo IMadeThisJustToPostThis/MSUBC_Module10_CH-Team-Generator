@@ -37,6 +37,7 @@ function createTeam() {
             .then(initTeamObj => {
                 const team = new Team(initTeamObj.name);
                 outputPath = path.join(outputDir, team.getTeam() + ".html");
+                team.setPopulation(1);
                 teamData.push(team);
                 selectRole();
             })
@@ -167,6 +168,9 @@ function createTeam() {
         // creates a new file with our output-path and filename, passing the users inputted data into the
         // page renderer as an argument, which is then passed into the "data" argument field for "writeFileSync"
         fs.writeFileSync(outputPath, render(team, teamData));
+        // essentially, we create 2 arrays containing our objects, pass that onto the imported render function from /lib/renderPage,
+        // which then utilizes the getter methods of each object as well as our template .html files to generate a string of custom html
+        // that then gets written to a new file with the .html extension, creating our custom generated html page
     }
 
     // prompt to select the role of each employee
@@ -216,6 +220,7 @@ function createTeam() {
             // otherwise (still assuming no error is detected), render the page
             .then(continueLogic => {
                 if (continueLogic.continue == "Yes") {
+                    teamData[0].setPopulation(teamData[0].getPopulation() + 1);
                     selectRole();
                 } else {
                     renderPage();
