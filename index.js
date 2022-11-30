@@ -31,7 +31,7 @@ function createTeam() {
                     name: "name"
                 }
             ])
-            // if error isn't detected, create team object ans assign to teamData array,
+            // if error isn't detected, create team object and assign to teamData array,
             // then, re-assign placeholder file name
             // then, move onto selectRole() function
             .then(initTeamObj => {
