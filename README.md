@@ -1,6 +1,7 @@
   # MSUBC_Module10_CH Team Generator by Mateusz Zielinski
   ## Description
   This program generates a .html page containing all user-inputted employees that are part of a specific project team
+  
   ![Alt text](EXAMPLE.png)
   ## License
   [![License: No License](https://img.shields.io/badge/License--lightgrey.svg)](https://opensource.org/licenses/)
