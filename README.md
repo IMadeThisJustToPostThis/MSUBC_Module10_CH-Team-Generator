@@ -1,4 +1,5 @@
   # MSUBC_Module10_CH Team Generator by Mateusz Zielinski
+  Module Topic: Object-Oriented Programming
   ## Description
   This program generates a .html page containing all user-inputted employees that are part of a specific project team
   
